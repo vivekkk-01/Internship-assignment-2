@@ -30,4 +30,69 @@
       </div>
     </div>
   </body>
+  <script>
+    document.getElementById("html-btn").style.background = "purple";
+    document.getElementById("html-btn").style.color = "white";
+    document.getElementById("html-btn").style.border = "none";
+    document.getElementById("css-paragraph").style.display = "none";
+    document.getElementById("javascript-paragraph").style.display = "none";
+
+    document.getElementById("html-btn").addEventListener("click", function () {
+      document.getElementById("html-btn").style.background = "purple";
+      document.getElementById("html-btn").style.color = "white";
+      document.getElementById("html-btn").style.border = "none";
+
+      document.getElementById("css-btn").style.background = "white";
+      document.getElementById("css-btn").style.color = "black";
+      document.getElementById("css-btn").style.border = "1px solid black";
+
+      document.getElementById("javascript-btn").style.background = "white";
+      document.getElementById("javascript-btn").style.color = "black";
+      document.getElementById("javascript-btn").style.border =
+        "1px solid black";
+
+      document.getElementById("html-paragraph").style.display = "block";
+      document.getElementById("css-paragraph").style.display = "none";
+      document.getElementById("javascript-paragraph").style.display = "none";
+    });
+
+    document.getElementById("css-btn").addEventListener("click", function () {
+      document.getElementById("css-btn").style.background = "purple";
+      document.getElementById("css-btn").style.color = "white";
+      document.getElementById("css-btn").style.border = "none";
+
+      document.getElementById("html-btn").style.background = "white";
+      document.getElementById("html-btn").style.color = "black";
+      document.getElementById("html-btn").style.border = "1px solid black";
+
+      document.getElementById("javascript-btn").style.background = "white";
+      document.getElementById("javascript-btn").style.color = "black";
+      document.getElementById("javascript-btn").style.border =
+        "1px solid black";
+
+      document.getElementById("html-paragraph").style.display = "none";
+      document.getElementById("css-paragraph").style.display = "block";
+      document.getElementById("javascript-paragraph").style.display = "none";
+    });
+
+    document
+      .getElementById("javascript-btn")
+      .addEventListener("click", function () {
+        document.getElementById("javascript-btn").style.background = "purple";
+        document.getElementById("javascript-btn").style.color = "white";
+        document.getElementById("javascript-btn").style.border = "none";
+
+        document.getElementById("html-btn").style.background = "white";
+        document.getElementById("html-btn").style.color = "black";
+        document.getElementById("html-btn").style.border = "1px solid black";
+
+        document.getElementById("css-btn").style.background = "white";
+        document.getElementById("css-btn").style.color = "black";
+        document.getElementById("css-btn").style.border = "1px solid black";
+
+        document.getElementById("html-paragraph").style.display = "none";
+        document.getElementById("css-paragraph").style.display = "none";
+        document.getElementById("javascript-paragraph").style.display = "block";
+      });
+  </script>
 </html>
